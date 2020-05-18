@@ -1,0 +1,6 @@
+1. sudo docker run -di --name=mysql -p 53306:3306 -e MYSQL_ROOT_PASSWORD=lcw2688499 mysql:8.0
+//Docker create a mysql container and run in background, Expose localhost's port 53306 as container's port 3306
+
+2. sudo docker run -di --name=myredis -v ~/Desktop/Docker/docker-mnt:/usr/loacl/docker-mnt redis
+//Docker create a redis container and run in background, 
+//Mount host's Directory ~/Desktop/Docker/docker-mnt to container's Directory /usr/loacl/docker-mnt

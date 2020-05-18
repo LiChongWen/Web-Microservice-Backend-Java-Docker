@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=dockerDB
+      - MYSQL_USER=lcw
+      - MYSQL_PASSWORD=lcw2688499
+    ports:
+      - 53307:3306
+
+  eureka-discovery:
+    image: eureka:latest
+    ports:
+      - 57000:7000
+
+  app-article:
+    image: article:latest
+    ports:
+      - 9001:9001
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/dockerDB?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-discovery:7000/eureka
+    depends_on:
+      - mysql
+      - eureka-discovery
+
+  app-zuul:
+    image: zuul:latest
+    ports:
+      - 58888:8888
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-discovery:7000/eureka
+    depends_on:
+      - eureka-discovery
