@@ -1,0 +1,16 @@
+ariticle/newEntity/NewArticle$ArticleConvert.class
+ariticle/exception/InvaildRequestException.class
+ariticle/pojo/ArticleRepository.class
+ariticle/controller/ArticleController.class
+ariticle/exception/NotFoundException.class
+ariticle/service/ArticleServiceImp.class
+ariticle/handler/ApiExceptionHandler.class
+ariticle/utils/CustomBeanUtils.class
+ariticle/newEntity/NewArticle.class
+ariticle/pojo/Article.class
+ariticle/resource/ErrorResource.class
+ariticle/resource/InvaildErrorResource.class
+ariticle/ArticleApplication.class
+ariticle/service/ArticleService.class
+ariticle/resource/FieldErrorResource.class
+ariticle/newEntity/Convert.class

@@ -1,0 +1,12 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: micro-eureka
+eureka:
+  client:
+    fetch-registry: false #是否从Eureka获取注册信息 #单机服务 false
+    register-with-eureka: false #是否把这个服务注册到 Eureka #单机服务 false
+    service-url:  #暴露Eureka注册地址
+      defaultZone: http://127.0.0.1:${server.port}/eureka

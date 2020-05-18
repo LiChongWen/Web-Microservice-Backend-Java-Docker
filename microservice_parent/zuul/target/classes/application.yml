@@ -1,0 +1,23 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: zuul
+zuul:
+  routes:
+    micro-aritcle:
+      path: /article-service/**
+      serviceId: micro-aritcle
+  #让Zuul定义的异常处理器失效，为了使用自定义的ErrorFilter处理异常
+  SendErrorFilter:
+    error:
+      disable: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:57000/eureka
+  instance:
+    prefer-ip-address: true

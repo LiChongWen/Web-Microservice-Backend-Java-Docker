@@ -1,0 +1,15 @@
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/controller/ArticleController.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/resource/ErrorResource.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/service/ArticleService.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/service/ArticleServiceImp.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/utils/CustomBeanUtils.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/pojo/Article.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/resource/FieldErrorResource.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/ArticleApplication.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/exception/InvaildRequestException.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/newEntity/NewArticle.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/newEntity/Convert.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/exception/NotFoundException.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/resource/InvaildErrorResource.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/handler/ApiExceptionHandler.java
+/Users/liarthur/Desktop/microservice_parent/article/src/main/java/ariticle/pojo/ArticleRepository.java
